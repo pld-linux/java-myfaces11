@@ -10,7 +10,7 @@
 Summary:	Implementation of JavaServer Faces %{apiver}
 Name:		java-myfaces11
 Version:	1.1.6
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries/Java
 Source0:	myfaces-api-%{version}.jar
@@ -37,6 +37,10 @@ cp -a %{SOURCE0} $RPM_BUILD_ROOT%{_javadir}/%{srcname}-api-%{version}.jar
 ln -s %{srcname}-api-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}-api-%{apiver}.jar
 cp -a %{SOURCE1} $RPM_BUILD_ROOT%{_javadir}/%{srcname}-impl-%{version}.jar
 ln -s %{srcname}-impl-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/%{srcname}-impl-%{apiver}.jar
+
+# for P: java(JavaServerFaces)
+ln -s %{srcname}-api-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/faces-api-%{apiver}.jar
+ln -s %{srcname}-impl-%{version}.jar $RPM_BUILD_ROOT%{_javadir}/faces-impl-%{apiver}.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
