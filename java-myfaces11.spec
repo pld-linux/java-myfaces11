@@ -10,7 +10,7 @@
 Summary:	Implementation of JavaServer Faces %{apiver}
 Name:		java-myfaces11
 Version:	1.1.6
-Release:	2
+Release:	3
 License:	Apache v2.0
 Group:		Libraries/Java
 Source0:	myfaces-api-%{version}.jar
@@ -21,7 +21,7 @@ URL:		http://myfaces.apache.org/core11/index.html
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-Provides:	java(JavaServerFaces) = %{apiver}
+Provides:	java(jsf) = %{apiver}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
