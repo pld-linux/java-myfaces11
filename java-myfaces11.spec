@@ -3,7 +3,6 @@
 # - Requires: (?)
 
 # Conditional build:
-%include	/usr/lib/rpm/macros.java
 
 %define		srcname		myfaces
 %define		apiver		1.1
