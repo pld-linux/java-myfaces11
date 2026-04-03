@@ -9,7 +9,7 @@
 Summary:	Implementation of JavaServer Faces %{apiver}
 Name:		java-myfaces11
 Version:	1.1.6
-Release:	3
+Release:	4
 License:	Apache v2.0
 Group:		Libraries/Java
 Source0:	myfaces-api-%{version}.jar
